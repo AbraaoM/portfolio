@@ -40,7 +40,7 @@ export function Hero (){
       <Grid
         h={{
           base: "full",
-          lg: "90vh"
+          lg: "100vh"
         }}
         templateRows={{
           base: "repeat(100, 1fr)",
@@ -70,7 +70,7 @@ export function Hero (){
             alignContent="center"
             paddingLeft="2rem"
             >
-            AM.
+            Abraão Moreira.
           </Flex>
 
         </GridItem>
@@ -96,7 +96,9 @@ export function Hero (){
               fontSize="6xl"
               fontWeight="extrabold"
             >
-              Resolvendo problemas com código! 
+              Resolvendo problemas com código! <br/>
+              Entre em contato!
+
             </Text>
           </Center>
 
@@ -185,93 +187,3 @@ export function Hero (){
     </Container>
   )
 }
-
-
-      {/* <Box>
-        
-      </Box>
-      <Flex  
-        className={styles.logo}
-        w="100%" 
-        h="10vh"
-        fontSize="3.5rem"
-        color="white"
-        display="flex"
-        alignItems="center"
-        paddingLeft="2rem"
-        >
-        AM.
-      </Flex>
-
-      <Flex>
-        <Flex>
-          <Box 
-            className={styles.hero}
-            w="60%" 
-            h="70vh"
-            color="#50fa7b"
-            fontSize="3.5rem"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            paddingLeft= "5%"
-            paddingRight="5%"
-            >
-            Resolvendo problemas com código! 
-
-          </Box>
-          <Box  
-            w="40%" 
-            h="70vh"
-            color="white"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            paddingLeft= "5%"
-            paddingRight="5%"
-            >
-              <Flex>
-                <Box padding="2rem">
-                  <Box padding="2rem">
-                    <a href="https://twitter.com/abraaomoreira_">
-                      <FaTwitter size="100"/>
-                    </a>
-                  </Box>
-                  <Box padding="2rem">
-                    <a href="https://github.com/abraaom">
-                      <FaGithub size="100"/>
-                    </a>
-                  </Box>
-                </Box>
-                <Box padding="2rem">
-                  <Box padding="2rem">
-                    <a href="https://dev.to/abraaom">
-                      <FaDev size="100"/>
-                    </a>
-                  </Box>
-                  <Box padding="2rem">
-                    <a href="https://www.linkedin.com/in/abraao-moreira/">
-                      <FaLinkedin size="100"/>
-                    </a>
-                  </Box>
-                </Box>
-              </Flex>
-          </Box>
-
-        </Flex>
-        <Box
-          h="15vh"
-          maxW="container.md"
-          color="white"
-          display="flex"
-          alignItems="center"
-          justifyContent="space-between"
-          padding="3rem"
-        >
-          <FaHtml5 size="50"/>
-          <FaCss3 size="50"/>
-          <FaJs size="50"/>
-          <FaReact size="50"/>
-          <FaNode size="50"/>
-        </Box>
-      </Flex> */}

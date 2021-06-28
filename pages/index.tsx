@@ -6,9 +6,7 @@ import { Hero } from '../components/hero/hero'
 export default function Home() {
   return (
     <Container 
-      maxW="full" 
-      bg="#282a36"
-      
+      maxW="full"       
     >
       <Head>
         <title>Abraão Moreira</title>
