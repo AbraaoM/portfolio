@@ -7,7 +7,8 @@ import { Container,
   Grid,
   GridItem,
   Text,
-  IconButton 
+  IconButton,
+  Image 
 } from "@chakra-ui/react"
 import { loadGetInitialProps } from "next/dist/next-server/lib/utils"
 import { FaGithub, 
@@ -22,8 +23,6 @@ import { FaGithub,
 } from "react-icons/fa"
 
 import styles from '../styles/Hero.module.css'
-
-
 
 export function Hero (){
   return(
@@ -128,7 +127,16 @@ export function Hero (){
             h="full"
             w="full"
           >
-            
+            <Image
+              boxSize={{
+                base:"300px",
+                md:"400px",
+                lg:"600px"
+              }}
+              src="https://raw.githubusercontent.com/AbraaoM/portfolio/c4a8124586c9d63f762d319203123ebc5c60bedb/images/hero_image.svg"
+            >
+              
+            </Image>
           </Center>
         </GridItem>
 
