@@ -128,35 +128,7 @@ export function Hero (){
             h="full"
             w="full"
           >
-            <Wrap
-              spacing="2rem"
-              color="white"
-              fontSize={{
-                base:"3em",
-                md:"5em"
-              }}
-            >
-              <WrapItem>
-                <a href="https://twitter.com/abraaomoreira_">
-                  <FaTwitter />
-                </a>
-              </WrapItem>
-              <WrapItem>
-                <a href="https://github.com/abraaom">
-                  <FaGithub />
-                </a>
-              </WrapItem>
-              <WrapItem>
-                <a href="https://dev.to/abraaom">
-                  <FaDev />
-                </a>
-              </WrapItem>
-              <WrapItem>
-                <a href="https://www.linkedin.com/in/abraao-moreira/">
-                  <FaLinkedin />
-                </a>
-              </WrapItem>
-            </Wrap>
+            
           </Center>
         </GridItem>
 

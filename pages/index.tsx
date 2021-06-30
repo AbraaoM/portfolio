@@ -7,9 +7,7 @@ import { About } from '../components/about'
 export default function Home() {
   return (
     <Box 
-      maxW="100vw"   
-      bg="tomato"
-
+      maxW="100vw" 
     >
       <Head>
         <title>Abraão Moreira</title>
