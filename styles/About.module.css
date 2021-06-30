@@ -1,0 +1,9 @@
+.about_container{
+  font-family: 'Roboto', serif;
+}
+
+.texto span{
+  font-family: 'Roboto', serif;
+  color: #50fa7b !important; 
+  font-weight: normal;
+}

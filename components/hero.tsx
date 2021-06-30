@@ -7,7 +7,8 @@ import { Container,
   Grid,
   GridItem,
   Text,
-  IconButton 
+  IconButton,
+  Image 
 } from "@chakra-ui/react"
 import { loadGetInitialProps } from "next/dist/next-server/lib/utils"
 import { FaGithub, 
@@ -22,8 +23,6 @@ import { FaGithub,
 } from "react-icons/fa"
 
 import styles from '../styles/Hero.module.css'
-
-
 
 export function Hero (){
   return(
@@ -44,7 +43,7 @@ export function Hero (){
       <Grid
         h={{
           base: "full",
-          lg: "100vh"
+          lg: "80vh"
         }}
         templateRows={{
           base: "repeat(100, 1fr)",
@@ -128,35 +127,16 @@ export function Hero (){
             h="full"
             w="full"
           >
-            <Wrap
-              spacing="2rem"
-              color="white"
-              fontSize={{
-                base:"3em",
-                md:"5em"
+            <Image
+              boxSize={{
+                base:"300px",
+                md:"400px",
+                lg:"600px"
               }}
+              src="https://raw.githubusercontent.com/AbraaoM/portfolio/c4a8124586c9d63f762d319203123ebc5c60bedb/images/hero_image.svg"
             >
-              <WrapItem>
-                <a href="https://twitter.com/abraaomoreira_">
-                  <FaTwitter />
-                </a>
-              </WrapItem>
-              <WrapItem>
-                <a href="https://github.com/abraaom">
-                  <FaGithub />
-                </a>
-              </WrapItem>
-              <WrapItem>
-                <a href="https://dev.to/abraaom">
-                  <FaDev />
-                </a>
-              </WrapItem>
-              <WrapItem>
-                <a href="https://www.linkedin.com/in/abraao-moreira/">
-                  <FaLinkedin />
-                </a>
-              </WrapItem>
-            </Wrap>
+              
+            </Image>
           </Center>
         </GridItem>
 
