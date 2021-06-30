@@ -44,7 +44,7 @@ export function Hero (){
       <Grid
         h={{
           base: "full",
-          lg: "100vh"
+          lg: "80vh"
         }}
         templateRows={{
           base: "repeat(100, 1fr)",
