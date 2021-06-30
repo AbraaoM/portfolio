@@ -27,7 +27,6 @@ export function Hero (){
   
     <Container
       maxW="full"
-      bg="#282a36"
     >
 
       <svg width="0" height="0">
