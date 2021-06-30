@@ -6,7 +6,8 @@ import { Container,
   Center,
   Grid,
   GridItem,
-  Text 
+  Text,
+  IconButton 
 } from "@chakra-ui/react"
 import { loadGetInitialProps } from "next/dist/next-server/lib/utils"
 import { FaGithub, 
@@ -20,13 +21,16 @@ import { FaGithub,
   FaNode 
 } from "react-icons/fa"
 
-import styles from '../../styles/Hero.module.css'
+import styles from '../styles/Hero.module.css'
+
+
 
 export function Hero (){
   return(
   
     <Container
-      maxW="full"
+      maxW="100vw"
+      bg="#282a36"  
     >
 
       <svg width="0" height="0">
@@ -35,6 +39,7 @@ export function Hero (){
           <stop stopColor="#591885" offset="100%" />
         </linearGradient>
       </svg>
+      
 
       <Grid
         h={{
@@ -64,12 +69,15 @@ export function Hero (){
         >
           <Flex  
             className={styles.logo}
-            fontSize="3.5rem"
+            fontSize={{
+              base: "3em",
+              md:"4em"
+            }}
             color="white"
             alignContent="center"
-            paddingLeft="2rem"
+            paddingLeft="0.2em"
             >
-            Abraão Moreira.
+            AM.
           </Flex>
 
         </GridItem>
@@ -92,10 +100,13 @@ export function Hero (){
             <Text
               bgGradient="linear(to-r, #50fa7b,#6272a4)"
               bgClip="text"
-              fontSize="6xl"
+              fontSize={{
+                base:"2em",
+                md:"3em"
+              }}
               fontWeight="extrabold"
             >
-              Resolvendo problemas com código! <br/>
+              Resolvendo problemas com código! <br/><br/>
               Entre em contato!
 
             </Text>
@@ -120,25 +131,29 @@ export function Hero (){
             <Wrap
               spacing="2rem"
               color="white"
+              fontSize={{
+                base:"3em",
+                md:"5em"
+              }}
             >
               <WrapItem>
                 <a href="https://twitter.com/abraaomoreira_">
-                  <FaTwitter size="100"/>
+                  <FaTwitter />
                 </a>
               </WrapItem>
               <WrapItem>
                 <a href="https://github.com/abraaom">
-                  <FaGithub size="100"/>
+                  <FaGithub />
                 </a>
               </WrapItem>
               <WrapItem>
                 <a href="https://dev.to/abraaom">
-                  <FaDev size="100"/>
+                  <FaDev />
                 </a>
               </WrapItem>
               <WrapItem>
                 <a href="https://www.linkedin.com/in/abraao-moreira/">
-                  <FaLinkedin size="100"/>
+                  <FaLinkedin />
                 </a>
               </WrapItem>
             </Wrap>
@@ -172,17 +187,21 @@ export function Hero (){
               md: '10%',
               lg: "20%"
             }}
+            fontSize={{
+              base:"2.5em",
+              md:"3.5em"
+            }}
           >
-            <FaHtml5 size="60"/>
-            <FaCss3 size="60"/>
-            <FaJs size="60"/>
-            <FaReact size="60"/>
-            <FaNode size="60"/>
+            <FaHtml5 />
+            <FaCss3 />
+            <FaJs />
+            <FaReact />
+            <FaNode />
           </Center>
 
         </GridItem>
       </Grid>
-        
+
     </Container>
   )
 }

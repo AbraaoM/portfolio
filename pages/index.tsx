@@ -1,17 +1,14 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Container } from "@chakra-ui/react"
-import { Hero } from '../components/hero/hero'
+import { Box } from "@chakra-ui/react"
+import { Hero } from '../components/hero'
 
 export default function Home() {
   return (
-    <Container 
-      maxW="full"   
-      h={{
-        base: "full",
-        md:"100vh"
-      }}
-      bg="#282a36"    
+    <Box 
+      maxW="100vw"   
+      bg="tomato"
+
     >
       <Head>
         <title>Abraão Moreira</title>
@@ -19,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Hero/>
-    </Container>
+
+    </Box>
   )
 }
