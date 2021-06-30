@@ -7,7 +7,10 @@ export default function Home() {
   return (
     <Container 
       maxW="full"   
-      h="100vh"
+      h={{
+        base: "full",
+        md:"100vh"
+      }}
       bg="#282a36"    
     >
       <Head>
