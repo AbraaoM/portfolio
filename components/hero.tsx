@@ -133,7 +133,7 @@ export function Hero (){
                 md:"400px",
                 lg:"600px"
               }}
-              src="https://raw.githubusercontent.com/AbraaoM/portfolio/c4a8124586c9d63f762d319203123ebc5c60bedb/images/hero_image.svg"
+              src="https://raw.githubusercontent.com/AbraaoM/portfolio/2471208a96b058d6cecd9268ab44d6865af1ec3f/images/hero_image.svg"
             >
               
             </Image>
