@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import { Box } from "@chakra-ui/react"
 import { Hero } from '../components/hero'
 import { About } from '../components/about'
+import { DevSection } from '../components/devSection/devSection'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <Hero/>
       <About/>
+      <DevSection/>
 
     </Box>
   )
