@@ -10,22 +10,26 @@ import axios from 'axios'
 
 import { DevCard } from "./devCard"
 
+import { GetServerSideProps } from 'next'
+
 export function DevSection(){
-  const [devArticle, setDevArticle] = useState()
+  const [devArticle, setDevArticle] = useState({})
   const [error, setError] = useState('')
 
-  const options = {
-    method: 'GET',
-    headers: { 'api-key': 'qBPthS9y5r61Pb76qBko33Dm' },
-    url: 'https://dev.to/api/articles/me/published?per_page=3'
-    // .get('https://dev.to/api/articles?username=abraaom')
-  }
+
+  // const options = {
+  //   method: 'GET',
+  //   headers: { 'api-key': 'qBPthS9y5r61Pb76qBko33Dm' },
+  //   url: 'https://dev.to/api/articles/me/published?per_page=3',
+  //   timeout: 5000
+  //   // .get('https://dev.to/api/articles?username=abraaom')
+  // }
 
   useEffect(() => {
     axios
-      .get('https://dev.to/api/articles?username=abraaom')   
+      .get('https://dev.to/api/articles?username=abraaom')  
       .then(resp => {
-        console.log(resp.data)
+        console.log(resp.data[0])
       })
       .catch(error => {
         setError(error.message)
@@ -42,9 +46,9 @@ export function DevSection(){
 
     
         <DevCard
-          title={ devArticle[0].title }
-          description={devArticle[0].description}
-          url={devArticle[0].url}
+          title={ devArticle.title}
+          description={devArticle.description}
+          url={devArticle.url}
         />
 {/* 
         <DevCard
@@ -65,4 +69,5 @@ export function DevSection(){
     </Container>
   )
 }
+
 
