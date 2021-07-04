@@ -4,6 +4,7 @@ import { Box } from "@chakra-ui/react"
 import { Hero } from '../components/hero'
 import { About } from '../components/about'
 import { DevSection } from '../components/devSection/devSection'
+import { GhSection} from '../components/ghSection/ghSection'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero/>
       <About/>
       <DevSection/>
+      <GhSection/>
 
     </Box>
   )
