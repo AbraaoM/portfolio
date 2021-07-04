@@ -4,32 +4,53 @@ import {
 
 import { 
   Container, 
-  Stack
+  Stack,
+  Center,
+  Text
 } from "@chakra-ui/react"
 import axios from 'axios'
 
 import { DevCard } from "./devCard"
 
-import { GetServerSideProps } from 'next'
+type cardInputs = [{
+  title: string;
+  description: string;
+  url:string;
+},
+{
+  title: string;
+  description: string;
+  url:string;
+},
+{
+  title: string;
+  description: string;
+  url:string;
+}]
 
 export function DevSection(){
-  const [devArticle, setDevArticle] = useState({})
+  const [devArticle, setDevArticle] = useState<cardInputs>([{
+    title: 'Título',
+    description: 'Descrição',
+    url: '404'
+  },
+  {
+    title: 'Título',
+    description: 'Descrição',
+    url: '404'
+  },
+  {
+    title: 'Título',
+    description: 'Descrição',
+    url: '404'
+  }])
   const [error, setError] = useState('')
-
-
-  // const options = {
-  //   method: 'GET',
-  //   headers: { 'api-key': 'qBPthS9y5r61Pb76qBko33Dm' },
-  //   url: 'https://dev.to/api/articles/me/published?per_page=3',
-  //   timeout: 5000
-  //   // .get('https://dev.to/api/articles?username=abraaom')
-  // }
 
   useEffect(() => {
     axios
       .get('https://dev.to/api/articles?username=abraaom')  
       .then(resp => {
-        console.log(resp.data[0])
+        setDevArticle(resp.data)
       })
       .catch(error => {
         setError(error.message)
@@ -38,34 +59,49 @@ export function DevSection(){
 
   return(
     <Container
-      h="100vh"
       maxW="full"
       bg="#282a36" 
-      paddingTop="5%"
+      paddingTop="2%"
+      paddingBottom="5%"
     >
+      <Center>
+        <Text
+          bgGradient="linear(to-r, #50fa7b,#6272a4)"
+          bgClip="text"
+          fontSize={{
+            base:"2em",
+            md:"3em"
+          }}
+          fontWeight="extrabold"
+          lineHeight="2em"
+        >
+          Dev Community
+        </Text>
+      </Center>
+      <Center>
+        <Stack
+          spacing={10}
+        >
+          <DevCard
+            title={ devArticle[0].title}
+            description={devArticle[0].description}
+            url={devArticle[0].url}
+          />
 
-    
-        <DevCard
-          title={ devArticle.title}
-          description={devArticle.description}
-          url={devArticle.url}
-        />
-{/* 
-        <DevCard
-          title={devArticle[0].title}
-          description={devArticle[0].description}
-          url={devArticle[0].url}
-        />
+          <DevCard
+            title={devArticle[1].title}
+            description={devArticle[1].description}
+            url={devArticle[1].url}
+          />
 
-        <DevCard
-          title={devArticle[0].title}
-          description={devArticle[0].description}
-          url={devArticle[0].url}
-        /> */}
-
-    
-
-
+          <DevCard
+            title={devArticle[2].title}
+            description={devArticle[2].description}
+            url={devArticle[2].url}
+          />
+        </Stack>
+      </Center>
+      
     </Container>
   )
 }
