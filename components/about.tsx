@@ -1,25 +1,14 @@
 import { Container, 
-  Box, 
   Flex, 
-  Wrap,
-  WrapItem,
   Center,
-  Grid,
-  GridItem,
   Text,
-  IconButton ,
   Image
 } from "@chakra-ui/react"
-import { loadGetInitialProps } from "next/dist/next-server/lib/utils"
-import { FaGithub, 
+import { 
+  FaGithub, 
   FaLinkedin, 
   FaTwitter, 
   FaDev, 
-  FaJs, 
-  FaHtml5, 
-  FaCss3, 
-  FaReact, 
-  FaNode 
 } from "react-icons/fa"
 
 import styles from '../styles/About.module.css'
@@ -70,14 +59,12 @@ export function About(){
           color="white"
           fontWeight="light"
         >
-          Olá, sou <span>Abraão Moreira</span>, sou desenvolvedor de 
-          software, minhas especialidades são desenvolvimento de
+          Olá, meu nome é <span>Abraão Moreira</span>, sou desenvolvedor de 
+          software, atualmente trabalhando como <span>desenvolvedor web fullstack</span> (Angular + .NET) e de
           ferramentas para <span>análise gráfica</span> de mercados 
-          financeiros em <span>mql4</span> e <span>mql5</span> e sistemas web 
-          com <span>React</span> e <span>Express</span>.<br/>
-          Sou <span>Técnico em informática</span> pela ETEC João Gomes de
-          Araújo e atualmente sou estudante de <span>Ciência e 
-          Tecnologia</span> na <span>UNIFESP</span>.
+          financeiros em mql4 e mql5, além de twitteiro semi-profissional nas horas vagas.<br/>
+          Sou <span>Bacharel em Ciência e Tecnologia</span> formado pela Universidade Federal de São Paulo.<br/>
+          Você pode me encontrar nas minhas redes listadas abaixo, vamos conversar ;).
         </Text>
         
       </Flex>
