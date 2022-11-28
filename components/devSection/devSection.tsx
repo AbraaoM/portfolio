@@ -75,7 +75,7 @@ export function DevSection(){
           fontWeight="extrabold"
           lineHeight="2em"
         >
-          Dev Community
+          Artigos publicados
         </Text>
       </Center>
       <Center>
