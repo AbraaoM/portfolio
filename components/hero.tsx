@@ -58,7 +58,7 @@ export function Hero (){
             lg: 5
           }} 
         >
-          <Flex  
+          <Center  
             className={styles.logo}
             fontSize={{
               base: "3em",
@@ -69,7 +69,7 @@ export function Hero (){
             paddingLeft="0.2em"
             >
             AM.
-          </Flex>
+          </Center>
 
         </GridItem>
         <GridItem
@@ -103,33 +103,6 @@ export function Hero (){
             </Text>
           </Center>
 
-        </GridItem>
-        <GridItem
-          id="socials"
-          rowSpan={{
-            base: 35,
-            lg: 7
-          }} 
-          colSpan={{
-            base: 1,
-            lg: 2
-          }} 
-        >
-          <Center
-            h="full"
-            w="full"
-          >
-            <Image
-              boxSize={{
-                base:"300px",
-                md:"400px",
-                lg:"600px"
-              }}
-              src="https://raw.githubusercontent.com/AbraaoM/portfolio/2471208a96b058d6cecd9268ab44d6865af1ec3f/images/hero_image.svg"
-            >
-              
-            </Image>
-          </Center>
         </GridItem>
 
         <GridItem
