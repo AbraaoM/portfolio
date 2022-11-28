@@ -1,26 +1,27 @@
-import { Container, 
-  Box, 
+import { 
+  Container, 
   Flex, 
-  Wrap,
-  WrapItem,
   Center,
   Grid,
   GridItem,
   Text,
-  IconButton,
   Image 
 } from "@chakra-ui/react"
-import { loadGetInitialProps } from "next/dist/next-server/lib/utils"
-import { FaGithub, 
-  FaLinkedin, 
-  FaTwitter, 
-  FaDev, 
-  FaJs, 
-  FaHtml5, 
-  FaCss3, 
-  FaReact, 
-  FaNode 
+
+import {
+  FaNode
 } from "react-icons/fa"
+
+import {
+  SiTypescript,
+  SiDotnet,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiAngular,
+  SiReact,
+
+} from "react-icons/si"
 
 import styles from '../styles/Hero.module.css'
 
@@ -163,11 +164,14 @@ export function Hero (){
               md:"3.5em"
             }}
           >
-            <FaHtml5 />
-            <FaCss3 />
-            <FaJs />
-            <FaReact />
+            <SiHtml5 />
+            <SiCss3 />
+            <SiTypescript />
+            <SiJavascript />
+            <SiAngular />
+            <SiReact />
             <FaNode />
+            <SiDotnet />
           </Center>
 
         </GridItem>
