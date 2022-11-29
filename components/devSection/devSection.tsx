@@ -81,6 +81,7 @@ export function DevSection(){
       <Center>
         <Stack
           spacing={10}
+          w="container.lg"
         >
           <DevCard
             title={ devArticle[0].title}

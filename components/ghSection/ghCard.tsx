@@ -5,10 +5,15 @@ import {
   Link
 } from '@chakra-ui/react'
 
+type tags = {
+
+}
+
 type cardInputs = {
   title: string;
   description: string;
   url:string;
+  tags?: tags;
 }
 
 export function GhCard (props: cardInputs){
@@ -40,7 +45,7 @@ export function GhCard (props: cardInputs){
         href={props.url}
         isExternal
         color="#ff79c6"
-        fontSize="1.5em"
+        fontSize="1.3em"
         fontWeight="black"
         lineHeight="2em"
       >

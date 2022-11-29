@@ -69,7 +69,6 @@ export function GhSection(){
         setError(error.message)
       })
   }, [])
-
   return(
     <Container
       maxW="full"
@@ -94,20 +93,20 @@ export function GhSection(){
       <Center>
         <Stack
           spacing={10}
-          w="container.md"
+          w="container.lg"
         >
           <GhCard
-            title={ ghProject1.name}
+            title={ ghProject1.name.toUpperCase()}
             description={ghProject1.description}
             url={ghProject1.html_url}
           />
           <GhCard
-            title={ ghProject2.name}
+            title={ ghProject2.name.toUpperCase()}
             description={ghProject2.description}
             url={ghProject2.html_url}
           />
           <GhCard
-            title={ ghProject3.name}
+            title={ ghProject3.name.toUpperCase()}
             description={ghProject3.description}
             url={ghProject3.html_url}
           />
