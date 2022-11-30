@@ -12,6 +12,8 @@ import axios from 'axios'
 
 import { GhCard } from "./ghCard"
 
+import { tagEnum } from '../../enums/tagEnums'
+
 type cardInputs = {
   name: string;
   description: string;
@@ -99,16 +101,32 @@ export function GhSection(){
             title={ ghProject1.name.toUpperCase()}
             description={ghProject1.description}
             url={ghProject1.html_url}
+            tags={[
+              tagEnum.typescript, 
+              tagEnum.react, 
+              tagEnum.vercel, 
+              tagEnum.web]}
           />
           <GhCard
             title={ ghProject2.name.toUpperCase()}
             description={ghProject2.description}
             url={ghProject2.html_url}
+            tags={[
+              tagEnum.node,
+              tagEnum.react,
+              tagEnum.javascript,
+              tagEnum.web,
+              tagEnum.mobile
+            ]}
           />
           <GhCard
             title={ ghProject3.name.toUpperCase()}
             description={ghProject3.description}
             url={ghProject3.html_url}
+            tags={[
+              tagEnum["Mercado financeiro"],
+              tagEnum.MQL
+            ]}
           />
         </Stack>
       </Center>
