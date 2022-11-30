@@ -38,7 +38,7 @@ export function Hero (){
           lg: "80vh"
         }}
         templateRows={{
-          base: "repeat(100, 1fr)",
+          base: "repeat(50, 1fr)",
           lg: "repeat(10, 1fr)"
         }}
         templateColumns={{
